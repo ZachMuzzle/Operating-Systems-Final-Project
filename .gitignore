@@ -1,0 +1,5 @@
+#ALL .o file types
+*.o
+
+#All .exec file types
+*.exec
