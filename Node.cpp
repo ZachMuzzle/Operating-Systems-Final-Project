@@ -1,8 +1,6 @@
 
-#include <iostream>
-#include <stdlib.h>
-#include <iomanip>
 #include "Node.h"
+#include "headers.h"
 
 using namespace std;
 

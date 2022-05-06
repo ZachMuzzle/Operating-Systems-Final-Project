@@ -3,3 +3,7 @@
 
 #All .exec file types
 *.exec
+
+#Un-needed files
+*.DS_Store
+*vscode/
