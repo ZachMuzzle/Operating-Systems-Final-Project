@@ -84,9 +84,11 @@ D 9999
 ```
 
 ## How to Compile and run Program
-* To get **.o** files:
-`clang++ -c main.cpp Node.cpp`
-* To create **.exec** file:
-`clang++ main.o Node.o -o main.exec`
-* To run program:
-`./main.exec`
+  **BEFORE RUNNING CODE YOU MUST CHANGE THE TEXT DIRECTORY**
+  In [headers.h](headers.h) on line **21** you can change the file directory to your directory.
+  
+  **AFTER THIS STEP IS DONE YOU CAN PROCEED BELOW**
+  * A [Makefile](Makefile) is provided for easy compiling and running the program
+  * You can compile each separately by running `make 'function name'`
+  * You can compile everything by running `make program`
+  * To run the program just run `make run`
