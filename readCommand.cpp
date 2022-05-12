@@ -1,5 +1,6 @@
 #include "Node.h"
 #include "headers.h"
+/* Function just reads command as a string and will decide which function it then goes to. */
 void readCommand(string input, Node *sys, Node *submit, Node *wait, Node *hold1, Node *hold2, Node *ready, Node *run, Node *complete) {
 	/*Convert the string to a char array and split (space as delimiter)*/
 	char parsed[input.length()];

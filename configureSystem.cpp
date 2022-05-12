@@ -1,6 +1,6 @@
 #include "Node.h"
 #include "headers.h"
-
+/* Function is used to configure the system we just get the values of our M, S, and Q states */
 void configureSystem(char *str) {
 	while (str != NULL) {
 		if (str[0] == 'M') {
@@ -14,6 +14,6 @@ void configureSystem(char *str) {
 		} else {
 			/*Unrecognized input*/
 		}
-		str = std::strtok(NULL, " ");
+		str = std::strtok(NULL, " "); // Split on each spaced string and return str again until empty.
 	}
 }

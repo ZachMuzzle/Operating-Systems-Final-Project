@@ -1,10 +1,11 @@
 #include "Node.h"
 #include "headers.h"
-
+/* This function is the "A Request for Devices" part */
 void makeRequest(char *str, Node *sys, Node *run, Node *ready, Node *wait) {
 	int quantumSlice = 0;
 	int j = 0;
 	int d = 0;
+	/* We check string and asssign values only to J and D */
 	while (str != NULL) {
 		if (str[0] == 'J') {
 			j = extractFromString(str);
@@ -13,6 +14,9 @@ void makeRequest(char *str, Node *sys, Node *run, Node *ready, Node *wait) {
 		}
 		str = std::strtok (NULL, " ");
 	}
+
+	/* This is where the function is different.
+	We are now making request for jobs. However, we must check if jobs are running on CPU. */
 	run->next->devicesRequested = d;
 
 	if (j != run->next->jobNumber) {

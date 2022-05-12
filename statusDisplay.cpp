@@ -1,11 +1,12 @@
 #include "Node.h"
 #include "headers.h"
-
+/* Functions just displays information */
 void statusDisplay(string input, Node *sys, Node *submit, Node *hold1, Node *hold2, Node *ready, Node *run, Node *wait, Node *complete) {
-	if (input == "D 9999 " || input == "D 9999") {
+	if (input == "D 9999 " || input == "D 9999") { // this just sets allIputRead to true from false. Prints all data at end of while loop in main
 		allInputRead = true;
 		return;
 	}
+	// Otherwise print system status at time 
 	cout << "System status at time " << realTime << ": " << endl;
 	printSystem(sys);
 	cout << endl << "Submit Queue contents: " << endl;

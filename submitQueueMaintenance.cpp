@@ -1,6 +1,6 @@
 #include "Node.h"
 #include "headers.h"
-/*Maintenance methods*/
+/*Maintenance function*/
 void submitQueueMaintenance(Node *sys, Node *submit, Node *hold1, Node *hold2) {
 	if (submit->next != NULL) {
 		Node *temp = submit;

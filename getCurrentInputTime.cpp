@@ -15,7 +15,7 @@ int getCurrentInputTime(string input) {
 				t += pow(10, std::strlen(temp) - j - 1) * (temp[j] - '0');
 			}
 		}
-		temp = std::strtok(NULL, " ");
+		temp = std::strtok(NULL, " "); // goes through the string split on each " ".
 		i++;
 	}
 	return t;

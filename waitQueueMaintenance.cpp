@@ -1,6 +1,6 @@
 #include "Node.h"
 #include "headers.h"
-
+/* Wait Queue Maintenacne Function */
 void waitQueueMaintenance(Node *sys, Node *wait, Node *ready) {
 	if (wait->next != NULL) {
 		Node *temp = wait;

@@ -1,10 +1,6 @@
 #include "Node.h"
 #include "headers.h"
 
-/* TODO: NEED TO MAKE SURE VARIABLES ARE  DEFINED IN EVERY FUNCTION
-	AS PREVIOUS WAS JUST ALL IN MAIN
- */
-
 /* Define variables globally */
 	int realTime = 0;
 	int inputNumber = 0;
@@ -20,7 +16,6 @@
 	int quantum = 0;
 	int quantumSlice = 0;
 
-/* TODO: MAYBE PASS VARIABLES THROUGH THE FUNCTION */
 int main () {
 
 	/*Read input from the target text file and place in a queue of strings*/
@@ -31,7 +26,7 @@ int main () {
 		int i = 0;
 		while (getline(myfile, line)) {
 			if (line[line.length() - 1] != ' ') { //Safety check
-				cout << "Line not ending with a space (line " << i + 1 << ") - input ignored." << endl;
+				cout << "Line not ending with a space (line " << i + 1 << ") - input ignored." << endl; // test file must after a space at the end of each line.
 				i--;
 			} else {
 				queue[i] = line;

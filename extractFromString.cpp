@@ -1,6 +1,7 @@
 #include "Node.h"
 #include "headers.h"
-
+/* This function is used to extract the string input e.g: Any input that starts with a letter we find and extact the string to then decide
+what operation we use */
 int extractFromString(char *str) {
 	int x = 0;
 	int i = std::strlen(str) - 1;
