@@ -16,7 +16,7 @@
 	int quantum = 0;
 	int quantumSlice = 0;
 
-int main () {
+int main (void) {
 
 	/*Read input from the target text file and place in a queue of strings*/
 	string line;
@@ -40,8 +40,8 @@ int main () {
 		return 0;
 	}
 
-	/*Create necessary queues*/
-	Node *sys = new Node; //System is a keyword so use sys just to be safe
+	/*We create all queues that are needed*/
+	Node *sys = new Node; //System Node
 	sys->head = true;
 	sys->next = NULL;
 
@@ -165,26 +165,26 @@ int main () {
 		}
 	}
 
-	/*Final system display*/
-	cout << "Final system status: " << endl;
+	/*D 9999 Final Status*/
+	cout << "This is the final system status: " << endl;
 	printSystem(sys);
-	cout << endl << "Submit Queue contents: " << endl;
+	cout << endl << "This is the Submit Queue contents: " << endl;
 	traverseAndPrint(submitQueue);
-	cout << endl << "Hold Queue 1 contents: " << endl;
+	cout << endl << "This is the Hold Queue 1 contents: " << endl;
 	traverseAndPrint(holdQueue1);
-	cout << endl << "Hold Queue 2 contents: " << endl;
+	cout << endl << "This is the Hold Queue 2 contents: " << endl;
 	traverseAndPrint(holdQueue2);
-	cout << endl << "Ready Queue contents: " << endl;
+	cout << endl << "This is the Ready Queue contents: " << endl;
 	traverseAndPrint(readyQueue);
-	cout << endl << "Running on the CPU: " << endl;
+	cout << endl << "This is Running on the CPU: " << endl;
 	if (runningQueue->next != NULL) {
 		traverseAndPrint(runningQueue);
 	} else {
 		cout << "No job currently running." << endl;
 	}
-	cout << endl << "Wait Queue contents: " << endl;
+	cout << endl << "This is the Wait Queue contents: " << endl;
 	traverseAndPrint(waitQueue);
-	cout << endl << "Complete Queue contents: " << endl;
+	cout << endl << "This is the Complete Queue contents: " << endl;
 	traverseAndPrint(completeQueue);
 
 	/*Print system turnaround time and system weighted turnaround time*/

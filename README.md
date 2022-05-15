@@ -92,3 +92,6 @@ D 9999
   * You can compile each separately by running `make 'function name'`
   * You can compile everything by running `make program`
   * To run the program just run `make run`
+
+## Report
+  The report on our design approach and screenshots of output can be viewed here [REPORT](report/Report%20for%20CISC361%20Project.pdf)
